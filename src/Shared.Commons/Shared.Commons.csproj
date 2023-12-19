@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BindOpen.Labs.Shared.Commons</AssemblyName>
+    <RootNamespace>BindOpen.Labs.Shared.Commons</RootNamespace>
+    <Authors>Xavier Gonier</Authors>
+    <Company>BindOpen</Company>
+    <Product>BindOpen.Labs.Shared</Product>
+    <Copyright>Copyright ©2019-2023 BindOpen - All rights reserved.</Copyright>
+    <PackageTags>bindopen, labs, shared</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.Shared.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs.Shared</PackageProjectUrl>
+    <PackageId>BindOpen.Labs.Shared.Commons</PackageId>
+    <Description>This packages groups classes used in BindOpen projects.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>BindOpen.Labs.Shared.Commons.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>BindOpen.Labs.Shared.Commons.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared.Abstractions\Shared.Abstractions.csproj" />
+  </ItemGroup>
+  
+</Project>

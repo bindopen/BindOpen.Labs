@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BindOpen.Labs.Shared.AspNetCore</name>
+    </assembly>
+    <members>
+        <member name="T:BindOpen.Labs.Shared.AspNetCore.Diagnostics.BdoLogExtension">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.AspNetCore.Diagnostics.BdoLogExtension.ToProblemDetailsList(BindOpen.Kernel.Logging.IBdoLog)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.AspNetCore.Diagnostics.BdoLogExtension.GetJsonResult(System.Object,BindOpen.Kernel.Logging.IBdoLog)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:BindOpen.Labs.Shared.i18n.CustomStringLocalizer">
+            <summary>
+            This class represents a custom string localizer.
+            </summary>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Instantiates a new instance of the CustomStringLocalizer class.
+            </summary>
+            <param name="entries">The entries to consider.</param>
+        </member>
+        <member name="P:BindOpen.Labs.Shared.i18n.CustomStringLocalizer.Item(System.String)">
+            <summary>
+            Gets the translation entry value having the specified key.
+            </summary>
+            <param name="key">The key to consider.</param>
+            <returns>Returns the translation corresponding to the specified key.</returns>
+        </member>
+        <member name="P:BindOpen.Labs.Shared.i18n.CustomStringLocalizer.Item(System.String,System.Object[])">
+            <summary>
+            Gets the translation entry value having the specified key considering the specified arguments.
+            </summary>
+            <param name="name">The name to consider.</param>
+            <param name="arguments">The arguments to consider.</param>
+            <returns>Returns the translation corresponding to the specified key.</returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizer.GetAllStrings(System.Boolean)">
+            <summary>
+            Gets all the localized strings of the current culture.
+            </summary>
+            <param name="includeParentCultures">Indicates whether the parent culture is considered.</param>
+            <returns>Returns all the localized strings of the current culture.</returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizer.WithCulture">
+            <summary>
+            Gets a new string localizer consider the specified culture.
+            </summary>
+            <returns>Returns a new string localizer consider the specified culture.</returns>
+            <remarks>This method is not used.</remarks>
+        </member>
+        <member name="T:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory">
+            <summary>
+            This class represents a factory to a custom string localizer.
+            </summary>
+        </member>
+        <member name="P:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.FolderPath">
+            <summary>
+            The path of the i18n folder.
+            </summary>
+        </member>
+        <member name="P:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.FileBaseName">
+            <summary>
+            The base name of i18n files.
+            </summary>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.#ctor(Microsoft.Extensions.Options.IOptions{BindOpen.Labs.Shared.i18n.I18nConfiguration})">
+            <summary>
+            Instantiates a new instance of the CustomStringLocalizerFactory class.
+            </summary>
+            <param name="i18nOptions">The i18n options to consider.</param>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.Create(System.Type)">
+            <summary>
+            Creates a new string localizer considering the specified resource type.
+            </summary>
+            <param name="resourceSource">The resource source to consider.</param>
+            <returns>Returns a new string localizer.</returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.Create(System.String,System.String)">
+            <summary>
+            Creates a new string localizer considering the specified base file name and folder location.
+            </summary>
+            <param name="baseName">The name of the base file to consider.</param>
+            <param name="location">The path of the folder to consider.</param>
+            <returns>Returns a new string localizer.</returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.GetEntries">
+            <summary>
+            Retrieve the entry dictionary from files.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringLocalizerFactory.GetTranslationFromFile(System.String)">
+            <summary>
+            Gets the DTO translation from the specified file.
+            </summary>
+            <param name="filePath">The file to consider.</param>
+            <returns>Returns the DTO translation.</returns>
+        </member>
+        <member name="T:BindOpen.Labs.Shared.i18n.I18nException">
+            <summary>
+            This class represents an i18n exception.
+            </summary>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.I18nException.#ctor(System.String)">
+            <summary>
+            This class represents an exception occuring in the localization service.
+            </summary>
+            <param name="title"></param>
+        </member>
+        <member name="T:BindOpen.Labs.Shared.i18n.CustomStringHelper">
+            <summary>
+            This static class exposes custom string helper methods.
+            </summary>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringHelper.GetTranslationDictionaryKey(System.String,System.String)">
+            <summary>
+            Gets the translation dictionary key from the specified language and translation key.
+            </summary>
+            <param name="lang">The language to consider.</param>
+            <param name="key">The translation key to consider.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringHelper.GetTranslationEntryKey(System.String)">
+            <summary>
+            Gets the translation entry key from the specified translation dictionary key.
+            </summary>
+            <param name="dictionaryKey">The translation dictionary key to consider.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringHelper.GetEntryLanguage(System.String)">
+            <summary>
+            Gets the translation language from the specified dictionary key.
+            </summary>
+            <param name="dictionaryKey">The dictionary key to consider.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BindOpen.Labs.Shared.i18n.CustomStringHelper.GetHttpContextUICulture(Microsoft.AspNetCore.Http.HttpContext,System.String)">
+            <summary>
+            Gets the Http context UI culture.
+            </summary>
+            <param name="context">The context to consider.</param>
+            <param name="defaultUICulture">The default UI culture to consider.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.ExceptionExtensions">
+            <summary>
+            This class exposes extensions on exception.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.ExceptionExtensions.UseBindOpenExceptionHandler(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Configures the specified .Net core service collection.
+            </summary>
+            <param name="app">The application builder to consider.</param>
+            <param name="env">The environment to consider.</param>
+            <param name="logger">The logger to consider.</param>
+        </member>
+        <member name="T:Microsoft.AspNetCore.Builder.HttpResponseExceptionFilter">
+            <summary>
+            This class represents a Http response exception filter.
+            </summary>
+        </member>
+        <member name="P:Microsoft.AspNetCore.Builder.HttpResponseExceptionFilter.Order">
+            <summary>
+            The order of this instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.HttpResponseExceptionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Executes when action is executing.
+            </summary>
+            <param name="context">The context to consider.</param>
+        </member>
+        <member name="M:Microsoft.AspNetCore.Builder.HttpResponseExceptionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)">
+            <summary>
+            Executes when action is executed.
+            </summary>
+            <param name="context">The context to consider.</param>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.I18nServiceExtensions">
+            <summary>
+            This static class contains i18n extensions.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.I18nServiceExtensions.ConfigureBindOpenLocalization(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configures the specified .Net core service collection.
+            </summary>
+            <param name="services">The service collection to consider.</param>
+        </member>
+    </members>
+</doc>
