@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>BindOpen.Labs.i18n.CLI</AssemblyName>
+    <RootNamespace>BindOpen.Labs.i18n.CLI</RootNamespace>
+    <Authors>Xavier Gonier</Authors>
+    <Company>BindOpen</Company>
+    <Product>BindOpen.Labs.Shared</Product>
+    <Copyright>Copyright ©2019-2023 BindOpen - All rights reserved.</Copyright>
+    <PackageTags>bindopen, labs, shared</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.Shared.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs.Shared</PackageProjectUrl>
+    <PackageId>BindOpen.Labs.i18n.CLI</PackageId>
+    <Description>This packages groups classes used in BindOpen projects.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>BindOpen.Labs.i18n.CLI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>BindOpen.Labs.i18n.CLI.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\i18n.Core\i18n.Core.csproj" />
+  </ItemGroup>
+</Project>
