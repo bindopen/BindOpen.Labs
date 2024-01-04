@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BindOpen.Labs.AspNetCore</AssemblyName>
+    <RootNamespace>BindOpen.Labs.AspNetCore</RootNamespace>
+    <Authors>Xavier Gonier</Authors>
+    <Company>BindOpen</Company>
+    <Product>BindOpen.Labs</Product>
+    <Copyright>Copyright ©BindOpen 2011-2024</Copyright>
+    <PackageTags>bindopen, labs, shared</PackageTags>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs</PackageProjectUrl>
+    <PackageId>BindOpen.Labs.AspNetCore</PackageId>
+    <Description>This packages groups classes used in BindOpen Asp.net projects.</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>BindOpen.Labs.AspNetCore.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BindOpen.Kernel.Logging" Version="1.2.50" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.0" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Commons\Commons.csproj" />
+    <ProjectReference Include="..\Dtos\Dtos.csproj" />
+  </ItemGroup>
+  
+</Project>
