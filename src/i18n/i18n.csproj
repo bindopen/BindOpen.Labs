@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>BindOpen.Labs.i18n.CLI</AssemblyName>
-    <RootNamespace>BindOpen.Labs.i18n.CLI</RootNamespace>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BindOpen.Labs.i18n</AssemblyName>
+    <RootNamespace>BindOpen.Labs.i18n</RootNamespace>
     <Authors>Xavier Gonier</Authors>
     <Company>BindOpen</Company>
     <Product>BindOpen.Labs</Product>
@@ -13,15 +13,16 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs</PackageProjectUrl>
-    <PackageId>BindOpen.Labs.i18n.CLI</PackageId>
+    <PackageId>BindOpen.Labs.i18n</PackageId>
     <Description>This packages groups classes used in BindOpen projects.</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>BindOpen.Labs.i18n.CLI.xml</DocumentationFile>
+    <DocumentationFile>BindOpen.Labs.i18n.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\i18n\i18n.csproj" />
+    <PackageReference Include="BindOpen.Kernel.Data" Version="1.2.150" />
   </ItemGroup>
+
 </Project>
