@@ -1,3 +1,3 @@
 #Description
 
-BindOpen.Labs provides tooling clasess and applications.
+BindOpen.Labs provides tooling classes and applications.

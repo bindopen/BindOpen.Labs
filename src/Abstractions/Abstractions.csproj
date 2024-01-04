@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
-    <OutputType>Exe</OutputType>
-    <AssemblyName>BindOpen.Labs.i18n.CLI</AssemblyName>
-    <RootNamespace>BindOpen.Labs.i18n.CLI</RootNamespace>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BindOpen.Labs.Abstractions</AssemblyName>
+    <RootNamespace>BindOpen.Labs.Abstractions</RootNamespace>
     <Authors>Xavier Gonier</Authors>
     <Company>BindOpen</Company>
     <Product>BindOpen.Labs</Product>
@@ -13,15 +13,16 @@
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.git</RepositoryUrl>
     <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs</PackageProjectUrl>
-    <PackageId>BindOpen.Labs.i18n.CLI</PackageId>
+    <PackageId>BindOpen.Labs.Abstractions</PackageId>
     <Description>This packages groups classes used in BindOpen projects.</Description>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>BindOpen.Labs.i18n.CLI.xml</DocumentationFile>
+    <DocumentationFile>BindOpen.Labs.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\i18n\i18n.csproj" />
+    <PackageReference Include="BindOpen.Kernel.Abstractions" Version="1.2.150" />
   </ItemGroup>
+  
 </Project>

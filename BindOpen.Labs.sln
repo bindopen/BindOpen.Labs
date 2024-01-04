@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Commons", "src\Shared.Commons\Shared.Commons.csproj", "{4D05E7BF-5211-4C8A-BAF9-2F730E0E3FFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Commons", "src\Commons\Commons.csproj", "{4D05E7BF-5211-4C8A-BAF9-2F730E0E3FFA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{6104A7C4-DEB8-4F4A-9624-B8FCCD9D48B8}"
 	ProjectSection(SolutionItems) = preProject
@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		TODO.md = TODO.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.AspNetCore", "src\Shared.AspNetCore\Shared.AspNetCore.csproj", "{B2BBAA75-62D8-481F-A934-88C853E60A62}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore", "src\AspNetCore\AspNetCore.csproj", "{B2BBAA75-62D8-481F-A934-88C853E60A62}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Abstractions", "src\Shared.Abstractions\Shared.Abstractions.csproj", "{576E1D7F-785B-42C2-A71B-ADF2653A9906}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstractions", "src\Abstractions\Abstractions.csproj", "{576E1D7F-785B-42C2-A71B-ADF2653A9906}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared.Dtos", "src\Shared.Dtos\Shared.Dtos.csproj", "{A99B8CE2-070A-47EA-BCEE-ED0C6CC499F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dtos", "src\Dtos\Dtos.csproj", "{A99B8CE2-070A-47EA-BCEE-ED0C6CC499F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "i18n", "i18n", "{70E94873-A58D-46FD-A4E9-086D6183E25B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "i18n.Runtime", "src\i18n.Core\i18n.Core.csproj", "{8FA17A0A-6445-4BE7-897A-41A57D076F5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "i18n", "src\i18n\i18n.csproj", "{8FA17A0A-6445-4BE7-897A-41A57D076F5E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "i18n.CLI", "src\i18n.CLI\i18n.CLI.csproj", "{622BE49F-F4F0-4C4A-8C2A-86592D9FDCBA}"
 EndProject

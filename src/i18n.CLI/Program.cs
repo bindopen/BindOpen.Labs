@@ -1,4 +1,4 @@
-﻿using BindOpen.Kernel.Data.Helpers;
+﻿using BindOpen.Data.Helpers;
 using BindOpen.Labs.i18n;
 using BindOpen.Labs.i18n.Models;
 using System;
