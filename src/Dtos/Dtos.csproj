@@ -15,12 +15,29 @@
     <PackageProjectUrl>https://github.com/bindopen/meltingSoft.Sphere.Shared</PackageProjectUrl>
     <PackageId>BindOpen.Labs.Dtos</PackageId>
     <Description>This packages groups classes used in BindOpen projects.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>bindopen_icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>BindOpen.Labs.Dtos.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="..\..\docs\img\bindopen_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\Abstractions\Abstractions.csproj" />
   </ItemGroup>
