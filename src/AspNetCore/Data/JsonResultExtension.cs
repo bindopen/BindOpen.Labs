@@ -1,5 +1,4 @@
 ﻿using BindOpen.Logging;
-using BindOpen.Processing;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
