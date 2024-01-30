@@ -15,6 +15,8 @@
     <PackageProjectUrl>https://github.com/bindopen/meltingSoft.Sphere.Shared</PackageProjectUrl>
     <PackageId>BindOpen.Labs.Abstractions</PackageId>
     <Description>This packages groups classes used in BindOpen projects.</Description>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>bindopen_icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -22,7 +24,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="BindOpen.Kernel.Abstractions" Version="1.2.150" />
+    <None Include="..\..\docs\img\bindopen_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BindOpen.Abstractions" Version="1.2.166" />
   </ItemGroup>
   
 </Project>
