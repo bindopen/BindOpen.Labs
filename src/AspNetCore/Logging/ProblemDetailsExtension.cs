@@ -1,7 +1,6 @@
-﻿using BindOpen.Logging;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace BindOpen.Processing
+namespace BindOpen.Logging
 {
     /// <summary>
     /// 

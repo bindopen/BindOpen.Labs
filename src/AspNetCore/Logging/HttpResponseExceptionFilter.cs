@@ -1,4 +1,4 @@
-﻿using BindOpen.Processing;
+﻿using BindOpen.Logging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 

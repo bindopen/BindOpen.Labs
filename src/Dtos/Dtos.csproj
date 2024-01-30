@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
     <AssemblyName>BindOpen.Labs.Dtos</AssemblyName>
     <RootNamespace>BindOpen.Labs.Dtos</RootNamespace>
     <Authors>Xavier Gonier</Authors>
     <Company>BindOpen</Company>
-    <Product>BindOpen.Labs</Product>
+    <Product>meltingSoft.Sphere.Shared</Product>
     <Copyright>Copyright ©BindOpen 2011-2024</Copyright>
     <PackageTags>bindopen, labs, shared</PackageTags>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>https://github.com/bindopen/BindOpen.Labs.git</RepositoryUrl>
-    <PackageProjectUrl>https://github.com/bindopen/BindOpen.Labs</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/bindopen/meltingSoft.Sphere.Shared</PackageProjectUrl>
     <PackageId>BindOpen.Labs.Dtos</PackageId>
     <Description>This packages groups classes used in BindOpen projects.</Description>
   </PropertyGroup>

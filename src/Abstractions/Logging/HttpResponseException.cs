@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BindOpen.Processing
+namespace BindOpen.Logging
 {
     /// <summary>
     /// This class represents a HTTP response exception.
