@@ -17,7 +17,6 @@
     <Description>This packages groups classes used in BindOpen projects.</Description>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageIcon>bindopen_icon.png</PackageIcon>
-    <StartupObject>BindOpen.Labs.i18n.Program</StartupObject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
